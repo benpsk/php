@@ -3,7 +3,7 @@
         'name' => 'ben/rabbitmq',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'a78d0b917e4d8abcf1b0bbaed48f8dda2b33b879',
+        'reference' => '82c758aa6b9058a7a68cd23fc04d42e515a6901a',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'ben/rabbitmq' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'a78d0b917e4d8abcf1b0bbaed48f8dda2b33b879',
+            'reference' => '82c758aa6b9058a7a68cd23fc04d42e515a6901a',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
