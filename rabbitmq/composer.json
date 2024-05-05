@@ -1,0 +1,17 @@
+{
+    "name": "ben/rabbitmq",
+    "autoload": {
+        "psr-4": {
+            "Ben\\Rabbitmq\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Ben Gunn",
+            "email": "bengunn.dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php-amqplib/php-amqplib": "^3.6"
+    }
+}
