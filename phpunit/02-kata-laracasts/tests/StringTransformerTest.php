@@ -25,4 +25,9 @@ class StringTransformerTest extends TestCase
     $stringTransformer = new StringTransformer();
     $this->assertEquals($expected, $stringTransformer->toCamelCase($input));
   }
+
+    // public function test_underscore_string_return_camel_case()
+    // public function test_dash_string_return_camel_case()
+    // public function test_double_dash_string_return_camel_case()
+    // public function test_uppercase_string_return_camel_case()
 }
