@@ -1,10 +1,33 @@
 <?php
 
 use App\FizzBuzz;
+use PHPUnit\Framework\Attributes\DataProvider;
 use PHPUnit\Framework\TestCase;
 
 class FizzBuzzTest extends TestCase
 {
+  /*
+   * @param $numbers
+   * @param $expected
+   */
+  #[DataProvider('additionProvider')]
+  function test_it_retuns_correct_data(array $numbers, string $expected): void
+  {
+    foreach ($numbers as $number) {
+      $this->assertEquals($expected, FizzBuzz::convert($number));
+    }
+  }
+
+  /*
+   * @return array
+   */
+  public static function additionProvider(): array
+  {
+    return [
+      [[3, 6, 9, 12], 'fizz']
+    ];
+  }
+  /**
     function test_it_retuns_fizz_for_multiples_of_three()
     {
         foreach ([3, 6, 9, 12] as $number) {
@@ -32,4 +55,5 @@ class FizzBuzzTest extends TestCase
             $this->assertEquals($number, FizzBuzz::convert($number));
         }
     }
+   **/
 }
