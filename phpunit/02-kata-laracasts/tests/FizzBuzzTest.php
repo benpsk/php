@@ -11,7 +11,7 @@ class FizzBuzzTest extends TestCase
    * @param $expected
    */
   #[DataProvider('additionProvider')]
-  function test_it_retuns_correct_data(array $numbers, string $expected): void
+  function test_it_returns_correct_data(array $numbers, string $expected): void
   {
     foreach ($numbers as $number) {
       $this->assertEquals($expected, FizzBuzz::convert($number));

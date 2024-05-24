@@ -20,14 +20,14 @@ class StringTransformerTest extends TestCase
   }
 
   #[DataProvider('additionProvider')]
-  public function testCamelCase(string $expected, string $input): void
+  public function test_the_input_string_return_camel_case(string $expected, string $input): void
   {
     $stringTransformer = new StringTransformer();
     $this->assertEquals($expected, $stringTransformer->toCamelCase($input));
   }
 
-    // public function test_underscore_string_return_camel_case()
-    // public function test_dash_string_return_camel_case()
-    // public function test_double_dash_string_return_camel_case()
-    // public function test_uppercase_string_return_camel_case()
+  // public function test_underscore_string_return_camel_case()
+  // public function test_dash_string_return_camel_case()
+  // public function test_double_dash_string_return_camel_case()
+  // public function test_uppercase_string_return_camel_case()
 }
